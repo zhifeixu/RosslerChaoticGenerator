@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../nn_package.vhd" \
+"../../../../input_processing.vhd" \
+"../../../../mult.vhd" \
+"../../../../n_hidden.vhd" \
+"../../../../n_output.vhd" \
+"../../../../nn.vhd" \
+"../../../../output_processing.vhd" \
+"../../../../purelin.vhd" \
+"../../../../tansig.vhd" \
+"../../../../FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1080 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 19 12:24:10 2021
+# Process ID: 10540
+# Current directory: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14148 D:\Apps\1. ALL_Labs\ENEL489Labs\Project\Vivado\FinalProject_ENEL489\FinalProject_ENEL489.xpr
+# Log file: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/vivado.log
+# Journal file: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 12:40:00 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr 19 12:46:58 2021] Launched impl_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'input_processing'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_hidden'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_output'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'output_processing'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_NN'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'tansig' remains a black box since it has no binding entity [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+WARNING: [VRFC 10-4940] 'purelin' remains a black box since it has no binding entity [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:173]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.n_hidden [n_hidden_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_processing [input_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_processing [output_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn [nn_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nn
+Built simulation snapshot tb_NN_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Apps/1. -notrace
+couldn't read file "D:/Apps/1.": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 19 12:48:22 2021...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1208.832 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1208.832 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 12:49:10 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+report_utilization
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.515 . Memory (MB): peak = 1235.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5552 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'purelin' instantiated as 'TF2GEN[0].transfer_function'. 3 instances of this cell are unresolved black boxes. [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:173]
+CRITICAL WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'tansig' instantiated as 'TF1GEN[0].transfer_function'. 20 instances of this cell are unresolved black boxes. [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1360.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1498.465 ; gain = 289.633
+report_utilization
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 19 12:51:38 2021
+| Host         : HomePC-SS running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : nn
+| Device       : 7z020clg484-1
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+-------+-------+-----------+-------+
+|        Site Type        |  Used | Fixed | Available | Util% |
++-------------------------+-------+-------+-----------+-------+
+| Slice LUTs*             | 23963 |     0 |     53200 | 45.04 |
+|   LUT as Logic          | 23963 |     0 |     53200 | 45.04 |
+|   LUT as Memory         |     0 |     0 |     17400 |  0.00 |
+| Slice Registers         |     0 |     0 |    106400 |  0.00 |
+|   Register as Flip Flop |     0 |     0 |    106400 |  0.00 |
+|   Register as Latch     |     0 |     0 |    106400 |  0.00 |
+| F7 Muxes                |     0 |     0 |     26600 |  0.00 |
+| F8 Muxes                |     0 |     0 |     13300 |  0.00 |
++-------------------------+-------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       140 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       140 |  0.00 |
+|   RAMB18       |    0 |     0 |       280 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   24 |     0 |       220 | 10.91 |
+|   DSP48E1 only |   24 |       |           |       |
++----------------+------+-------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |  193 |     0 |       200 | 96.50 |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |  0.00 |
+| IBUFDS                      |    0 |     0 |       192 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
+| ILOGIC                      |    0 |     0 |       200 |  0.00 |
+| OLOGIC                      |    0 |     0 |       200 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFIO      |    0 |     0 |        16 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         4 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |        16 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+-------+---------------------+
+| Ref Name |  Used | Functional Category |
++----------+-------+---------------------+
+| LUT2     | 11009 |                 LUT |
+| LUT3     |  5576 |                 LUT |
+| CARRY4   |  5528 |          CarryLogic |
+| LUT4     |  4855 |                 LUT |
+| LUT6     |  2950 |                 LUT |
+| LUT1     |  2566 |                 LUT |
+| LUT5     |  1946 |                 LUT |
+| IBUF     |    97 |                  IO |
+| OBUF     |    96 |                  IO |
+| DSP48E1  |    24 |    Block Arithmetic |
++----------+-------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+| tansig   |   20 |
+| purelin  |    3 |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+close_design
+close_project
+open_project {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2020.2/data/ip'.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 12:57:06 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 6
+[Mon Apr 19 13:09:33 2021] Launched impl_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/impl_1/runme.log
+add_files -norecurse {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 13:11:16 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr 19 13:54:50 2021] Launched impl_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.854 . Memory (MB): peak = 1519.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6092 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1526.043 ; gain = 6.480
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1526.043 ; gain = 6.480
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1919.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2006.480 ; gain = 486.918
+open_report: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 2306.297 ; gain = 254.223
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization -name utilization_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: nn
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2381.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nn' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:14]
+INFO: [Synth 8-3491] module 'input_processing' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd:7' bound to instance 'process_input_unit' of component 'input_processing' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'input_processing' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd:15]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'mult' (1#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:13]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd:35]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'input_processing' (2#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd:15]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:15]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:37]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:37]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:37]
+WARNING: [Synth 8-614] signal 'bi' is read in the process but is not in the sensitivity list [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:49]
+WARNING: [Synth 8-614] signal 'mult_array' is read in the process but is not in the sensitivity list [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'n_hidden' (3#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:15]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'n_hidden' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd:7' bound to instance 'Neuron' of component 'n_hidden' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:124]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:42]
+	Parameter N bound to: 32 - type: integer 
+	Parameter F bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'tansig' (4#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:42]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'tansig' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd:34' bound to instance 'transfer_function' of component 'tansig' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:144]
+INFO: [Synth 8-3491] module 'n_output' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:7' bound to instance 'Neuron' of component 'n_output' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'n_output' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:15]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_uni' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:33]
+WARNING: [Synth 8-614] signal 'bi' is read in the process but is not in the sensitivity list [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:43]
+WARNING: [Synth 8-614] signal 'mult_array' is read in the process but is not in the sensitivity list [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'n_output' (5#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:15]
+INFO: [Synth 8-3491] module 'n_output' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:7' bound to instance 'Neuron' of component 'n_output' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:158]
+INFO: [Synth 8-3491] module 'n_output' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd:7' bound to instance 'Neuron' of component 'n_output' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:158]
+INFO: [Synth 8-3491] module 'purelin' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd:33' bound to instance 'transfer_function' of component 'purelin' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'purelin' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd:40]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'purelin' (6#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd:40]
+INFO: [Synth 8-3491] module 'purelin' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd:33' bound to instance 'transfer_function' of component 'purelin' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:172]
+INFO: [Synth 8-3491] module 'purelin' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd:33' bound to instance 'transfer_function' of component 'purelin' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:172]
+INFO: [Synth 8-3491] module 'output_processing' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd:7' bound to instance 'process_output_unit' of component 'output_processing' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'output_processing' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd:15]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd:35]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd:35]
+INFO: [Synth 8-3491] module 'mult' declared at 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd:7' bound to instance 'mult_unit' of component 'mult' [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'output_processing' (7#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'nn' (8#1) [D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2381.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2381.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2381.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.228 . Memory (MB): peak = 2381.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2420.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2446.988 ; gain = 65.961
+95 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2446.988 ; gain = 65.961
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.857 . Memory (MB): peak = 2503.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6092 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2503.199 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2503.199 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2503.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2511.727 ; gain = 8.527
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'purelin'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tansig'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.n_hidden [n_hidden_default]
+Compiling architecture behavioral of entity xil_defaultlib.tansig [tansig_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.purelin [purelin_default]
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_processing [input_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_processing [output_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn [nn_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nn
+Built simulation snapshot tb_NN_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2846.727 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1
+file mkdir {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new}
+close [ open {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc} w ]
+add_files -fileset constrs_1 {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 14:27:22 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr 19 14:29:42 2021] Launched impl_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.858 . Memory (MB): peak = 2846.727 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6092 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2889.727 ; gain = 2.090
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2889.727 ; gain = 2.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2889.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2914.867 ; gain = 68.141
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+ERROR: [XSIM 43-4316] Can not find file: ../../../../../489_ShreyShah_Lab4/lab4_code/nn_package.vhd
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 14:39:35 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+close_design
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 14:47:22 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+close_project
+open_project {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn_package.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd}}] -no_script -reset -force -quiet
+remove_files  {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn_package.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd}}
+add_files -norecurse {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_output.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_hidden.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/mult.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/input_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/output_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn_package.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 14:51:18 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr 19 14:52:53 2021] Launched impl_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.863 . Memory (MB): peak = 3093.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6092 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3093.121 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3093.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3093.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 3093.121 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3093.121 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/input_processing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'input_processing'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_hidden.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_hidden'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'n_output'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/output_processing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'output_processing'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.n_hidden [n_hidden_default]
+Compiling architecture behavioral of entity xil_defaultlib.tansig [tansig_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.purelin [purelin_default]
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_processing [input_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_processing [output_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn [nn_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nn
+Built simulation snapshot tb_NN_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3093.121 ; gain = 0.000
+add_force {/tb_NN/temp_in[0]} -radix hex {0x0000387C 0ns}
+add_force {/tb_NN/temp_in[1]} -radix hex {0x0000203B 0ns}
+add_force {/tb_NN/temp_in[2]} -radix hex {0x000002D4 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:49 . Memory (MB): peak = 3093.121 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_NN'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.n_hidden [n_hidden_default]
+Compiling architecture behavioral of entity xil_defaultlib.tansig [tansig_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.purelin [purelin_default]
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_processing [input_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_processing [output_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn [nn_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nn
+Built simulation snapshot tb_NN_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3093.121 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 3093.121 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 3093.121 ; gain = 0.000
+add_force {/tb_NN/x_in[0]} -radix hex {0x0000387C 0ns}
+add_force {/tb_NN/x_in[1]} -radix hex {0x0000203B 0ns}
+add_force {/tb_NN/x_in[2]} -radix hex {0x000002D4 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_NN'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.n_hidden [n_hidden_default]
+Compiling architecture behavioral of entity xil_defaultlib.tansig [tansig_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.purelin [purelin_default]
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_processing [input_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_processing [output_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn [nn_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nn
+Built simulation snapshot tb_NN_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3093.121 ; gain = 0.000
+run 10 ns
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr 19 15:28:16 2021] Launched synth_1...
+Run output will be captured here: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_NN' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_NN_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_NN'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+"xelab -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06c26f8f34ad4afaa977db22728e29b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_NN_behav xil_defaultlib.tb_NN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nn_package
+Compiling architecture behavioral of entity xil_defaultlib.n_hidden [n_hidden_default]
+Compiling architecture behavioral of entity xil_defaultlib.tansig [tansig_default]
+Compiling architecture behavioral of entity xil_defaultlib.n_output [n_output_default]
+Compiling architecture behavioral of entity xil_defaultlib.purelin [purelin_default]
+Compiling architecture behavioral of entity xil_defaultlib.mult [mult_default]
+Compiling architecture behavioral of entity xil_defaultlib.input_processing [input_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.output_processing [output_processing_default]
+Compiling architecture behavioral of entity xil_defaultlib.nn [nn_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nn
+Built simulation snapshot tb_NN_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_NN_behav -key {Behavioral:sim_1:Functional:tb_NN} -tclbatch {tb_NN.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_NN.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_NN_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3093.121 ; gain = 0.000
+close_sim
+ERROR: [Vivado 12-106] *** Exception: java.lang.Exception: java.lang.StackOverflowError (See D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/vivado_pid10540.debug)
+INFO: [Simtcl 6-16] Simulation closed
+ERROR: [Common 17-39] 'close_sim' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 19 16:19:24 2021...

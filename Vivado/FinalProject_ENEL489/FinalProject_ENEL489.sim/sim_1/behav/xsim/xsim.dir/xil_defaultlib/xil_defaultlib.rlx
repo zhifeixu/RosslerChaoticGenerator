@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd,1618874282,vhdl,,,,tb_nn,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/input_processing.vhd,1522081688,vhdl,,,,input_processing,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/mult.vhd,1522081718,vhdl,,,,mult,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_hidden.vhd,1616969495,vhdl,,,,n_hidden,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_output.vhd,1616901594,vhdl,,,,n_output,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn.vhd,1618862152,vhdl,,,,nn,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn_package.vhd,1618867687,vhdl,D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/sim_1/new/nn_TB.vhd,,,nn_package,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/output_processing.vhd,1522081770,vhdl,,,,output_processing,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd,1616898640,vhdl,,,,purelin,,,,,,,,
+D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd,1616898640,vhdl,,,,tansig,,,,,,,,

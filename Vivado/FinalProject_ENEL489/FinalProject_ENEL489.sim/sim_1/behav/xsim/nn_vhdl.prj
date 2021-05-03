@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../lab4_code/nn_package.vhd" \
+"../../../../../lab4_code/input_processing.vhd" \
+"../../../../../lab4_code/mult.vhd" \
+"../../../../../lab4_code/n_hidden.vhd" \
+"../../../../../lab4_code/n_output.vhd" \
+"../../../../../lab4_code/output_processing.vhd" \
+"../../../../../lab4_code/nn.vhd" \
+
+# Do not sort compile order
+nosort

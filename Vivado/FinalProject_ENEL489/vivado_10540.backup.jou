@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 19 12:24:10 2021
+# Process ID: 10540
+# Current directory: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14148 D:\Apps\1. ALL_Labs\ENEL489Labs\Project\Vivado\FinalProject_ENEL489\FinalProject_ENEL489.xpr
+# Log file: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/vivado.log
+# Journal file: D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_simulation
+source tb_NN.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+report_utilization
+open_run synth_1 -name synth_1
+report_utilization
+close_design
+close_project
+open_project {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.xpr}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+add_files -norecurse {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+open_run impl_1
+close_design
+launch_simulation
+source tb_NN.tcl
+close_sim
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new
+file mkdir D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1
+file mkdir {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new}
+close [ open {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc} w ]
+add_files -fileset constrs_1 {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.srcs/constrs_1/new/20NS.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+close_project
+open_project {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/FinalProject_ENEL489.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn_package.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd}}] -no_script -reset -force -quiet
+remove_files  {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn_package.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/input_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/mult.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_hidden.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/n_output.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/output_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/489_ShreyShah_Lab4/lab4_code/nn.vhd}}
+add_files -norecurse {{D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_output.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/n_hidden.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/purelin.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/mult.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/input_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/output_processing.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/nn_package.vhd} {D:/Apps/1. ALL_Labs/ENEL489Labs/Project/Vivado/FinalProject_ENEL489/tansig.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source tb_NN.tcl
+add_force {/tb_NN/temp_in[0]} -radix hex {0x0000387C 0ns}
+add_force {/tb_NN/temp_in[1]} -radix hex {0x0000203B 0ns}
+add_force {/tb_NN/temp_in[2]} -radix hex {0x000002D4 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ms
+close_sim
+close_design
+launch_simulation
+source tb_NN.tcl
+restart
+run 10 ms
+restart
+run 10 ns
+close_sim
+launch_simulation
+source tb_NN.tcl
+add_force {/tb_NN/x_in[0]} -radix hex {0x0000387C 0ns}
+add_force {/tb_NN/x_in[1]} -radix hex {0x0000203B 0ns}
+add_force {/tb_NN/x_in[2]} -radix hex {0x000002D4 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source tb_NN.tcl
+run 10 ns
+run 10 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source tb_NN.tcl
+close_sim
